@@ -4,6 +4,7 @@
   "description": "https://img.shields.io/badge/Gulp-CF4647?style=for-the-badge&logo=gulp&logoColor=white",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp watch",
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^5.0.1",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^6.0.1",
     "sass": "^1.97.1"
   }
