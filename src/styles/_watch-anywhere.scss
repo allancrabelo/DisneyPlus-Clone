@@ -4,6 +4,11 @@
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+		gap: 32px;
+	}
+
 	img {
 		max-width: 100%;
 	}

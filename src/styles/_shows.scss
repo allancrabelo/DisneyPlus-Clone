@@ -10,6 +10,15 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 24px;
 
+		@media (max-width: 768px) {
+			grid-template-columns: 1fr 1fr;
+			gap: 16px;
+		}
+
+		@media (max-width: 480px) {
+			grid-template-columns: 1fr;
+		}
+
 		&--is-active {
 			display: grid;
 		}
@@ -25,6 +34,8 @@
 	&__tabs {
 		display: flex;
 		justify-content: center;
+		flexWrap: wrap;
+
 		&__button {
 			color: variaveis.$corTextoSecundario;
 			font-size: 20px;
@@ -34,6 +45,11 @@
 			text-transform: uppercase;
 			margin: 0 1vw;
 			cursor: pointer;
+
+			@media (max-width: 768px) {
+				font-size: 16px;
+				margin: 0 2vw 8px;
+			}
 
 			&--is-active {
 				border-bottom: 4px solid variaveis.$corTextoSecundario;
